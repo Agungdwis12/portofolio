@@ -44,14 +44,17 @@ window.addEventListener('scroll', scrollActive)
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
+  origin: "top", // Arah animasi muncul
+  distance: "40px", // Jarak elemen bergerak (lebih kecil = lebih cepat muncul)
+  duration: 800, // Durasi animasi (ms) → 800ms = 0.8 detik
+  delay: 100, // Jeda awal animasi (ms) → 100ms = 0.1 detik
+  // reset: true        // Boleh diaktifkan jika ingin animasi diulang saat scroll balik
 });
+
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+

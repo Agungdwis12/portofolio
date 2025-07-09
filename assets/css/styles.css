@@ -235,6 +235,26 @@ img {
 }
 
 /* ===== ABOUT =====*/
+.about__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-align: justify;
+}
+
+.about__subtitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -242,6 +262,7 @@ img {
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 .about__img {
   justify-self: center;
 }
@@ -249,8 +270,20 @@ img {
   width: 200px;
   border-radius: 0.5rem;
 }
+.about__text {
+  text-align: justify;
+  line-height: 1.6; 
+}
+
 
 /* ===== SKILLS =====*/
+/* Tambahkan ke styles.css */
+.two-column-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -297,16 +330,77 @@ img {
   width: 85%;
 }
 .skills__js {
-  width: 65%;
+  width: 70%;
 }
 .skills__ux {
   width: 85%;
 }
-.skills__img {
-  border-radius: 0.5rem;
+.skills__react {
+  width: 70%;
+}
+.skills__node {
+  width: 70%;
+}
+.skills__python {
+  width: 70%;
+}
+.skills__php {
+  width: 50%;
+}
+.skills__mysql {
+  width: 70%;
+}
+.skills__oracle {
+  width: 50%;
+}
+.skills__git {
+  width: 50%;
 }
 
 /* ===== WORK =====*/
+
+/* Container grid rapih dan responsif */
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card proyek */
+.work__item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Hover animasi */
+.work__item:hover {
+  transform: translateY(-5px);
+}
+
+/* Ukuran dan proporsi gambar */
+.work__img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Deskripsi teks */
+.work__desc {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+  flex-grow: 1;
+}
+
 .work__container {
   row-gap: 2rem;
 }
