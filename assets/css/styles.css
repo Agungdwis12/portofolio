@@ -394,12 +394,10 @@ img {
 
 /* Deskripsi teks */
 .work__desc {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
   text-align: justify;
-  flex-grow: 1;
+  line-height: 1.6;
 }
+
 
 .work__container {
   row-gap: 2rem;
